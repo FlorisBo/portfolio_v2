@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+*{
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+
+.parallax { 
+  background-color: rgb(40, 40, 40);
+  color: rgb(51, 255, 51);
+  font-family: 'Ubuntu Mono', monospace;
+  text-align: center;
+}
+
+h1{
+    font-size: 10rem;
+}
+
+h2 {
+  font-style: italic;
+  font-size: 7rem;
+}
+
+.container{
+  width: 90%;
+  margin: auto;
+}
+
+.picture{
+  position: relative;
+  border-radius: 5px;
+
+  &:hover {
+    filter: saturate(4);
+    transition: filter ease 1s;
+
+  }
+}
+
+.quote{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-style: italic;
+  text-align: center;
+}
+
+li{
+  list-style: none;
+}
+
+.sidebar{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darken(rgb(40, 40, 40), 10);
+
+  &__item {
+    cursor: pointer;
+  }
+
+}
+
+ul{
+  padding-left: 0 !important;
+}
+
+.intro{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  text-align: left;
+  width: 50%;
+  border-bottom: 2px solid rgb(51, 255, 51);
+}
+
+.school {
+  text-align: left;
+
+  &__name {
+    margin: 0;
+  }
+
+  &__date{
+    text-align: right;
+    height: 100%;
+    margin: 0;
+  }
+
+}
+
+.project {
+  text-align: left;
+}
