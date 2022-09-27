@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
-*{
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
+* {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 
-.parallax { 
+.parallax {
   background-color: rgb(40, 40, 40);
   color: rgb(51, 255, 51);
   font-family: 'Ubuntu Mono', monospace;
   text-align: center;
 }
 
-h1{
-    font-size: 10rem;
+h1 {
+  font-size: 10rem;
 }
 
 h2 {
@@ -23,12 +23,12 @@ h2 {
   font-size: 7rem;
 }
 
-.container{
+.container {
   width: 90%;
   margin: auto;
 }
 
-.picture{
+.picture {
   position: relative;
   border-radius: 5px;
 
@@ -39,7 +39,7 @@ h2 {
   }
 }
 
-.quote{
+.quote {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -49,11 +49,11 @@ h2 {
   text-align: center;
 }
 
-li{
+li {
   list-style: none;
 }
 
-.sidebar{
+.sidebar {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -66,18 +66,18 @@ li{
 
 }
 
-ul{
+ul {
   padding-left: 0 !important;
 }
 
-.intro{
+.intro {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.title{
+.title {
   text-align: left;
   width: 50%;
   border-bottom: 2px solid rgb(51, 255, 51);
@@ -88,9 +88,10 @@ ul{
 
   &__name {
     margin: 0;
+    font-weight: bold;
   }
 
-  &__date{
+  &__date {
     text-align: right;
     height: 100%;
     margin: 0;
@@ -100,4 +101,43 @@ ul{
 
 .project {
   text-align: left;
+
+  &__name {
+    text-align: left;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  &__description {
+    text-align: left;
+    margin: 15px;
+  }
+
+  &__date {
+    font-style: italic;
+    text-align: center;
+  }
+
+
+  &__frame {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    &--picture {
+      min-height: 75%;
+      min-width: 75%;
+      max-height: 12.5rem;
+      aspect-ratio: 16/9;
+      border-radius: 5px;
+
+    }
+
+    &:hover {
+      filter: hue-rotate(90deg);
+      transition: filter ease 1s;
+
+    }
+  }
 }

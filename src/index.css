@@ -81,6 +81,7 @@ ul {
 }
 .school__name {
   margin: 0;
+  font-weight: bold;
 }
 .school__date {
   text-align: right;
@@ -90,6 +91,36 @@ ul {
 
 .project {
   text-align: left;
+}
+.project__name {
+  text-align: left;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.project__description {
+  text-align: left;
+  margin: 15px;
+}
+.project__date {
+  font-style: italic;
+  text-align: center;
+}
+.project__frame {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.project__frame--picture {
+  min-height: 75%;
+  min-width: 75%;
+  max-height: 12.5rem;
+  aspect-ratio: 16/9;
+  border-radius: 5px;
+}
+.project__frame:hover {
+  filter: hue-rotate(90deg);
+  transition: filter ease 1s;
 }
 
 /*# sourceMappingURL=index.css.map */
