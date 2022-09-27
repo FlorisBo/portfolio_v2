@@ -21,11 +21,6 @@ h2 {
   font-size: 7rem;
 }
 
-.container {
-  width: 90%;
-  margin: auto;
-}
-
 .picture {
   position: relative;
   border-radius: 5px;
@@ -76,6 +71,10 @@ ul {
   border-bottom: 2px solid rgb(51, 255, 51);
 }
 
+.about-me {
+  text-align: left;
+}
+
 .school {
   text-align: left;
 }
@@ -121,6 +120,26 @@ ul {
 .project__frame:hover {
   filter: hue-rotate(90deg);
   transition: filter ease 1s;
+}
+
+.skills {
+  text-align: left;
+}
+
+.icon::before {
+  display: block;
+  background-color: #0f0f0f;
+  padding: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  color: rgb(51, 255, 51);
+}
+
+.hobby {
+  text-align: left;
 }
 
 /*# sourceMappingURL=index.css.map */
